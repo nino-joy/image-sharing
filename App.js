@@ -8,9 +8,9 @@ const App = () => {
 
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
-      width: 400,
-      height: 300,
-      cropping: true,
+      // width: 400,
+      // height: 300,
+      // cropping: true,
     }).then((data) => {
       // console.log(data);
       setImages([...images, {imageURL: data.path}]);
@@ -31,7 +31,7 @@ const App = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          Press ADD IMAGE to get started
+          Press "ADD IMAGE" to get started
         </Text>
       ) : null}
       <FlatList
